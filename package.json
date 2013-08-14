@@ -1,0 +1,30 @@
+{
+  "name": "raggiana",
+  "description": "finagle stats viewer",
+  "keywords": [
+    "raggiana",
+    "finagle"
+  ],
+  "license": "Apache License Version 2.0"
+,  "homepage": "http://twitter.github.com/raggiana",
+  "bugs": "https://github.com/twitter/raggiana",
+  "author": {
+    "name": "Twitter, Inc.",
+    "url": "https://twitter.com/twitteross"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Johnson",
+      "url": "https://twitter.com/anicelyjohnson"
+    }
+  ],
+  "devDependencies": {
+    "karma": "~0.10",
+    "karma-jasmine": "~0.1",
+    "karma-chrome-launcher": "~0.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+  },
+  "version": "1.0.0"
+}

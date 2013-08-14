@@ -1,0 +1,6 @@
+#instructions {font-family: "Times New Roman", time, serif}
+
+.metricsForm {width:450px;padding:10px;border:1px solid #aaaaaa; font-family: "Times New Roman", time, serif; font-size: 80%;}
+
+#d1,#d2 {float: left; width:500px; font-family: "Times New Roman", time, serif; font-size: 100%;}		
+  	  .metric:hover {color: #0000FF;}
