@@ -7,5 +7,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies" : {
+  	"jquery-ui" : "1.8.23",
+  	"rickshaw": "~1.4.3"
+  }
 }

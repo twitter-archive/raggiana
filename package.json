@@ -5,8 +5,8 @@
     "raggiana",
     "finagle"
   ],
-  "license": "Apache License Version 2.0"
-,  "homepage": "http://twitter.github.com/raggiana",
+  "license": "Apache License Version 2.0",
+  "homepage": "http://twitter.github.com/raggiana",
   "bugs": "https://github.com/twitter/raggiana",
   "author": {
     "name": "Twitter, Inc.",
