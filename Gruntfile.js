@@ -17,11 +17,12 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, flatten: true, src: ['bower_components/jquery-ui/themes/base/jquery-ui.css'], dest: 'dist/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/jquery-ui/themes/base/jquery-ui.css'], dest: 'dist/css', filter: 'isFile'},
           {expand: true, flatten: true, src: ['bower_components/jquery/jquery.js'], dest: 'dist/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['bower_components/jquery-ui/jquery-ui.js'], dest: 'dist/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['bower_components/rickshaw/rickshaw.css'], dest: 'dist/', filter: 'isFile'},
-          {expand: true, flatten: true, src: ['bower_components/rickshaw/examples/css/extensions.css'], dest: 'dist/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/rickshaw/rickshaw.css'], dest: 'dist/css', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/rickshaw/examples/css/extensions.css'], dest: 'dist/css', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['bower_components/rickshaw/examples/images/**'], dest: 'dist/images/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['src/statsViewer.css'], dest: 'dist/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['src/index.html'], dest: 'dist/', filter: 'isFile'},
           {expand: true, flatten: true, src: ['src/statsViewer.js'], dest: 'dist/', filter: 'isFile'},
