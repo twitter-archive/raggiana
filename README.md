@@ -12,7 +12,12 @@ Download Raggiana! The Github page is <https://github.com/twitter/raggiana>. Nav
 
 	$ git clone https://github.com/twitter/raggiana
 	
-That's it! You did it! Good job.
+Raggiana uses the Bower package manager (<https://github.com/bower/bower>). To load the dependencies, run
+
+	$ npm install bower //if you don't already have bower on your machine
+	$ bower install
+
+Bower will place the dependencies in a new directory called `bower_components`. You're now good to go!
 
 #####Open it
 Since Raggiana is javascript-based, you use it in your browser. Open a new tab and enter in the url bar:
