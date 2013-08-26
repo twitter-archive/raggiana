@@ -31,5 +31,5 @@
   "scripts": {
     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
