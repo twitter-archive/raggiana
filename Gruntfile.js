@@ -36,12 +36,19 @@ module.exports = function(grunt) {
       unit: {
         configFile: 'karma.conf.js'
       }
-    }
+    },
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
+      }
    });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-karma');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('test', ['copy', 'karma']);
   grunt.registerTask('default', ['copy']);
