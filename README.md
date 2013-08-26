@@ -22,7 +22,7 @@ Bower will place the dependencies in a new directory called `bower_components`. 
 #####Open it
 Since Raggiana is javascript-based, you use it in your browser. Open a new tab and enter in the url bar:
 
-	file://localhost/filepath/raggiana/statsViewer.html
+	file://localhost/filepath/raggiana/index.html
 	
 You should see an empty stats viewer, with controls on the left and some boxes at the bottom that say things like "metrics" and "graph." To upload some data, find the button that says __"Choose File"__. Click it, and it will allow you to choose a file to upload.
 
@@ -52,6 +52,14 @@ If you're developing with Raggiana and you want to run tests, it's easy! From yo
 	$ npm test
 
 You can edit the tests and add your own by modifying __runTests.js__ or by writing a new test file and adding it to the __"files"__ field in __karma.conf.js__.  
+
+###Publishing a new release
+
+To publish a new raggiana release, you can execute:
+
+        $ grunt release
+
+This will publish a new release to here: http://twitter.github.io/raggiana/
 
 ###Troubleshooting
 

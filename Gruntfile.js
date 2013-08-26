@@ -51,6 +51,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('test', ['copy', 'karma']);
+  grunt.registerTask('release', ['copy', 'gh-pages']);
   grunt.registerTask('default', ['copy']);
 
 };
