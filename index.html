@@ -1,0 +1,122 @@
+<!doctype html5>
+
+<!--Copyright 2013 Twitter, Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.-->
+
+<html>
+<head>
+  
+  <link type="text/css" rel="stylesheet" href="css/jquery-ui.css">
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  
+  <link type="text/css" rel="stylesheet" href="css/rickshaw.css">
+  <link type="text/css" rel="stylesheet" href="css/extensions.css">
+  <link type="text/css" rel="stylesheet" href="css/statsViewer.css">
+
+  <script src="rickshaw.js"></script>
+  <script src="extensions.js"></script>
+  <script src="d3.v2.js"></script>
+
+</head>
+<body>
+
+  <div id="content">
+    <form id="side_panel">
+	  <h1 id="graph_title">Raggiana</h1>
+	  <section><div id="legend"></div></section>
+	  <section>
+	    <div id="renderer_form" class="toggler">
+		  <input type="radio" name="renderer" id="area" value="area">
+		  <label for="area">area</label>
+		  <input type="radio" name="renderer" id="bar" value="bar">
+		  <label for="bar">bar</label>
+		  <input type="radio" name="renderer" id="line" value="line" checked>
+		  <label for="line">line</label>
+		  <input type="radio" name="renderer" id="scatter" value="scatterplot">
+		  <label for="scatter">scatter</label>
+		</div>
+	  </section>
+	  <section>
+	    <div id="offset_form">
+		  <label for="stack">
+			<input type="radio" name="offset" id="stack" value="zero">
+			<span>stack</span>
+		  </label>
+		  <label for="stream">
+			<input type="radio" name="offset" id="stream" value="wiggle">
+			<span>stream</span>
+		  </label>
+		  <label for="pct">
+			<input type="radio" name="offset" id="pct" value="expand">
+			<span>pct</span>
+		  </label>
+		  <label for="value">
+			<input type="radio" name="offset" id="value" value="value" checked>
+			<span>value</span>
+		  </label>
+		</div>
+		<div id="interpolation_form">
+		  <label for="cardinal">
+		    <input type="radio" name="interpolation" id="cardinal" value="cardinal" checked>
+			<span>cardinal</span>
+		  </label>
+		  <label for="linear">
+		    <input type="radio" name="interpolation" id="linear" value="linear">
+			<span>linear</span>
+		  </label>
+		  <label for="step">
+		    <input type="radio" name="interpolation" id="step" value="step-after">
+			<span>step</span>
+		  </label>
+		</div>
+	  </section>
+	  <section>
+		<h6>Smoothing</h6>
+		<div id="smoother"></div>
+	  </section>
+	  <section>
+		<input type="file" id="fileinput" onchange="Raggiana.readSingleFile(event)"/>
+	  </section>
+ 	  <section></section>
+	</form>
+
+	<div id="chart_container">
+	  <div id="chart"></div>
+	  <div id="timeline"></div>
+	  <div id="slider"></div>
+	</div>
+  </div>
+
+  <div id="test"></div>
+
+  <div id="metrics_form">
+	<div id="instructions">Drag metrics to the "Graphed Metrics" box or click on them to view them on the graph.</div>
+    <section id="d1">
+      <b>Graphed Metrics</b>
+      <div id = "dropzone1" ondrop="Raggiana.drop(event,'1')" ondragover="Raggiana.allowDrop(event)" class="metricsForm"></div>
+    </section>
+    <section id="d2">
+      <b>Available Metrics</b> <br>
+      Search for metrics: <input id="search" style="width:300px;" type="text"/>
+      <div id="dropzone2" ondrop="Raggiana.drop(event,'2')" ondragover="Raggiana.allowDrop(event)" class="metricsForm"></div>
+    </section>
+  </div> 
+
+<script src="statsViewer.js"></script>
+
+	
+
+</body>
+</html>
