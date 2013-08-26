@@ -1,3 +1,4 @@
 libpeerconnection.log
 node_modules/
 bower_components
+dist

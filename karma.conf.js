@@ -14,10 +14,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'vendor/jquery.min.js',
-      'vendor/jquery-ui.min.js',
-      'rickshaw/js/rickshaw.js',
-      'statsViewer.js',
+      'dist/jquery.js',
+      'dist/jquery-ui.js',
+      'dist/rickshaw.js',
+      'dist/statsViewer.js',
       'test/runTests.js'
     ],
 
