@@ -1,9 +1,8 @@
-#Raggiana
-##Stand-alone Finagle Stats Viewer
+#Raggiana [![Build Status](https://travis-ci.org/twitter/raggiana.png)](https://travis-ci.org/twitter/raggiana)
 
 ###Overview
 
-Raggiana exists to provide a fast, easy, and intuitive way to view and process data from Finagle projects. Finagle projects create a log file containing dense json data. Raggiana parses this data and graphs it using the Rickshaw javascript library.
+Raggiana exists to provide a fast, easy, and intuitive way to view and process data from [Finagle](http://twitter.github.io/finagle/) projects. Finagle projects create a log file containing dense json data. Raggiana parses this data and graphs it using the Rickshaw javascript library.
 
 ###Getting Started
 
@@ -16,13 +15,12 @@ Raggiana uses the Bower package manager (<https://github.com/bower/bower>). To l
 
 	$ npm install bower //if you don't already have bower on your machine
 	$ bower install
-
-Bower will place the dependencies in a new directory called `bower_components`. You're now good to go!
+	$ grunt dist
 
 #####Open it
 Since Raggiana is javascript-based, you use it in your browser. Open a new tab and enter in the url bar:
 
-	file://localhost/filepath/raggiana/index.html
+	file://localhost/filepath/raggiana/dist/index.html
 	
 You should see an empty stats viewer, with controls on the left and some boxes at the bottom that say things like "metrics" and "graph." To upload some data, find the button that says __"Choose File"__. Click it, and it will allow you to choose a file to upload.
 
@@ -57,6 +55,7 @@ You can edit the tests and add your own by modifying __runTests.js__ or by writi
 
 To publish a new raggiana release, you can execute:
 
+        $ npm tag v1.0.0 (or proper release version)
         $ grunt release
 
 This will publish a new release to here: http://twitter.github.io/raggiana/
@@ -72,6 +71,7 @@ For huge data (tens of thousands of data points), performance may become slow. U
 ###Feedback
 Bugs? Confusion? Raise an issue on github: <https://github.com/twitter/raggiana/issues>.
 
+###License
+Copyright 2013 Twitter, Inc. and other contributors
 
-
-
+Licensed under the Apache License Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
